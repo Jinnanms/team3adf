@@ -1,0 +1,51 @@
+{
+	"name": "AzureSynapseAnalyticsTable4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "CustomerID",
+				"type": "varchar"
+			},
+			{
+				"name": "LastName",
+				"type": "varchar"
+			},
+			{
+				"name": "FirstName",
+				"type": "varchar"
+			},
+			{
+				"name": "PhoneNumber",
+				"type": "varchar"
+			},
+			{
+				"name": "CreatedDate",
+				"type": "date"
+			},
+			{
+				"name": "UpdatedDate",
+				"type": "date"
+			},
+			{
+				"name": "SourceID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "UniqueID",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Customer"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

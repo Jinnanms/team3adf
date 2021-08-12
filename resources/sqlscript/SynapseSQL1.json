@@ -1,0 +1,17 @@
+{
+	"name": "SynapseSQL1",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE Sales\n  (  \n\tSourceID int NOT NULL, \n\tUniqueOrderID\tvarchar(64),\n\tOrderID\tvarchar(64),\n\tOrderDetailsID\tvarchar(64),\n\tUniqueMovieID\tvarchar(64),\n\tMovieID\tvarchar(64),\n\tQuantity\tInteger,\n\tUnitCost\tFloat,\n\tLineNumber\tInteger,\n\tCustomerID\tvarchar(64),\n\tUniqueCustomerID\tvarchar(64),\n\tOrderDate\tDate,\n\tShipDate\tDate,\n\tTotalCost\tFloat\n  )  \nWITH (DISTRIBUTION = ROUND_ROBIN,CLUSTERED COLUMNSTORE INDEX); ",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "ohquery",
+				"databaseName": "ohquery"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [SourceID]\n,[UniqueOrderID]\n,[OrderID]\n,[OrderDetailsID]\n,[UniqueMovieID]\n,[MovieID]\n,[Quantity]\n,[UnitCost]\n,[LineNumber]\n,[CustomerID]\n,[UniqueCustomerID]\n,[OrderDate]\n,[ShipDate]\n,[TotalCost]\n FROM [dbo].[Sales]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "ohquery",
+				"databaseName": "ohquery"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

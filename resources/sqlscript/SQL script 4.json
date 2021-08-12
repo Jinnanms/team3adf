@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 4",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [CustomerID]\n,[LastName]\n,[FirstName]\n,[PhoneNumber]\n,[CreatedDate]\n,[UpdatedDate]\n,[SourceID]\n,[UniqueID]\n FROM [dbo].[Customer]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "ohquery",
+				"databaseName": "ohquery"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

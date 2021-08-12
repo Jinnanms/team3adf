@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 6",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE Addresses\n  (  \n    SourceID\tInteger,\n    UniqueID\tvarchar(64),\n    AddressID\tvarchar(64),\n    CustomerID\tvarchar(64),\n    AddressLine1\tvarchar(64),\n    AddressLine2\tvarchar(64),\n    City\tvarchar(64),\n    State\tvarchar(64),\n    ZipCode\tvarchar(64),\n    CreatedDate\tDate,\n    UpdatedDate\tDate\n  )\nWITH (DISTRIBUTION = REPLICATE, CLUSTERED INDEX (AddressID)); ",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "ohquery",
+				"databaseName": "ohquery"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

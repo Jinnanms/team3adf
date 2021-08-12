@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE Customer\n  (  \n    CustomerID\tvarchar(64),\n    LastName\tvarchar(64),\n    FirstName\tvarchar(64),\n    PhoneNumber\tvarchar(64),\n    CreatedDate\tDate,\n    UpdatedDate\tDate,\n    SourceID\tInteger,\n    UniqueID\tvarchar(64)\n\n  )  \nWITH (DISTRIBUTION = REPLICATE, CLUSTERED INDEX (CustomerID));",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "ohquery",
+				"databaseName": "ohquery"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

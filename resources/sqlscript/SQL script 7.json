@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 7",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [SourceID]\n,[UniqueID]\n,[AddressID]\n,[CustomerID]\n,[AddressLine1]\n,[AddressLine2]\n,[City]\n,[State]\n,[ZipCode]\n,[CreatedDate]\n,[UpdatedDate]\n FROM [dbo].[Addresses]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "ohquery",
+				"databaseName": "ohquery"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,79 @@
+{
+	"name": "AzureSynapseAnalyticsTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "SourceID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "UniqueOrderID",
+				"type": "varchar"
+			},
+			{
+				"name": "OrderID",
+				"type": "varchar"
+			},
+			{
+				"name": "OrderDetailsID",
+				"type": "varchar"
+			},
+			{
+				"name": "UniqueMovieID",
+				"type": "varchar"
+			},
+			{
+				"name": "MovieID",
+				"type": "varchar"
+			},
+			{
+				"name": "Quantity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "UnitCost",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "LineNumber",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CustomerID",
+				"type": "varchar"
+			},
+			{
+				"name": "UniqueCustomerID",
+				"type": "varchar"
+			},
+			{
+				"name": "OrderDate",
+				"type": "date"
+			},
+			{
+				"name": "ShipDate",
+				"type": "date"
+			},
+			{
+				"name": "TotalCost",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Sales"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
